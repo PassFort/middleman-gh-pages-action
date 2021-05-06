@@ -24,7 +24,7 @@ ls -l | wc -l
 echo 'Committing files...'
 git commit -m'Middleman build' > /dev/null 2>&1
 echo "Pushing... to $remote_repo master:$remote_branch"
-git push --force $remote_repo master:$remote_branch > /dev/null 2>&1
+git push --force $remote_repo master:$remote_branch > /dev/null
 echo "Removing git..."
 rm -fr .git
 cd -
